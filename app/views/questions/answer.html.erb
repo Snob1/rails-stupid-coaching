@@ -1,0 +1,21 @@
+<div class="question">
+  <h2><%= params[:query] %></h2>
+  <p>--- You</p>
+</div>
+
+<div class="answer">
+  <% "I am going to work right now!" %>
+    <p> "Speak to the coach"</p>
+    <%=  @answer %>
+  <p>--- Your coach</p>
+</div>
+
+<a href="/ask">Ask new question</a>
+
+<!--
+# your_message = gets.chomp.to_s
+    # until your_message == "I am going to work right now!"
+    #   puts "Speak to the coach"
+    #   your_message = gets.chomp.to_s
+    #   puts coach_answer_enhanced(your_message).to_s
+    # end -->
